@@ -3,7 +3,8 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { doc, getDoc, collection, addDoc, query, where, getDocs } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import { FiArrowLeft, FiMapPin, FiBriefcase, FiClock, FiDollarSign, FiCalendar, FiCheckCircle } from 'react-icons/fi';
+import { FiArrowLeft, FiMapPin, FiBriefcase, FiClock, FiCalendar, FiCheckCircle } from 'react-icons/fi';
+import { FaRupeeSign } from "react-icons/fa";
 import { format } from 'date-fns';
 import toast from 'react-hot-toast';
 
@@ -160,7 +161,7 @@ const JobDetails = () => {
             
             {job.salary && (
               <div className="flex items-center">
-                <FiDollarSign className="h-5 w-5 text-gray-400 mr-2" />
+                <FaRupeeSign className="h-5 w-5 text-gray-400 mr-2" />
                 <span className="text-gray-700">{job.salary}</span>
               </div>
             )}

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FiBriefcase, FiSearch, FiUsers, FiCheckCircle } from 'react-icons/fi';
+import { FiBriefcase, FiSearch, FiUsers, FiCheckCircle, FiEdit } from 'react-icons/fi'; // Import FiEdit icon
 
 const Home = () => {
   return (
@@ -15,8 +15,7 @@ const Home = () => {
                   <span className="block text-accent-400">or perfect candidate</span>
                 </h1>
                 <p className="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                   A newly launched job portal by signpost celfon.in
-                  technology-connecting india's talent with their dream careers
+                  A newly launched job portal by Signpost Celfon.in technology—connecting India's talent with their dream careers.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
@@ -42,7 +41,52 @@ const Home = () => {
           />
         </div>
       </div>
-      
+
+      {/* --- New Section: Build Your ATS-Friendly Resume --- */}
+      {/* Changed background to a cool blue gradient that complements existing primary colors */}
+      <div className="bg-gradient-to-r from-primary-600 to-primary-800 py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
+          <h2 className="text-base font-semibold tracking-wide uppercase text-blue-200">New Feature Alert!</h2>
+          <p className="mt-2 text-4xl leading-14 font-extrabold tracking-tight sm:text-3xl">
+            Build Your Own ATS-Friendly Resume for Free!
+          </p>
+          <p className="mt-4 max-w-3xl text-xl mx-auto">
+            Stop worrying about Applicant Tracking Systems! Our new, intuitive resume builder helps jobseekers like you create professional, optimized resumes that stand out and land interviews.
+          </p>
+          <div className="mt-10">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <li className="flex flex-col items-center p-4 bg-white text-black rounded-lg shadow-md">
+                <FiEdit className="h-12 w-12 text-blue-200 mb-4" /> {/* Icon color changed */}
+                <h3 className="text-xl font-bold mb-2">Easy to Use</h3>
+                <p className="text-sm">Intuitive interface for quick and hassle-free resume creation.</p>
+              </li>
+              <li className="flex flex-col items-center p-4 bg-white text-black rounded-lg shadow-md">
+                <FiCheckCircle className="h-12 w-12 text-blue-200 mb-4" /> {/* Icon color changed */}
+                <h3 className="text-xl font-bold mb-2">ATS Optimized</h3>
+                <p className="text-sm">Designed to pass Applicant Tracking Systems with flying colors.</p>
+              </li>
+              <li className="flex flex-col items-center p-4 bg-white text-black rounded-lg shadow-md">
+                <FiUsers className="h-12 w-12 text-blue-200 mb-4" /> {/* Icon color changed */}
+                <h3 className="text-xl font-bold mb-2">Professional Template</h3>
+                <p className="text-sm">Choose a modern and industry-standard designs.</p>
+              </li>
+              <li className="flex flex-col items-center p-4 bg-white text-black rounded-lg shadow-md">
+                <FiBriefcase className="h-12 w-12 text-blue-200 mb-4" /> {/* Icon color changed */}
+                <h3 className="text-xl font-bold mb-2">Increase Your Chances</h3>
+                <p className="text-sm">Improve your visibility to recruiters and get more interview calls.</p>
+              </li>
+            </ul>
+          </div>
+          <div className="mt-12">
+            {/* Button color changed to complement the blue section */}
+            <p to="/resume-builder" className="inline-flex items-center justify-center px-10 py-4 border border-transparent text-base font-medium rounded-full text-blue-800 bg-white hover:bg-gray-100 md:py-5 md:text-xl md:px-12 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+              <FiEdit className="mr-3 h-6 w-6" /> Start Building Your Free Resume Now!
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* --- End New Section --- */}
+
       {/* Stats Section */}
       <div className="bg-gray-50 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,7 +123,7 @@ const Home = () => {
           </dl>
         </div>
       </div>
-      
+
       {/* How It Works Section */}
       <div className="bg-gray-50 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -102,7 +146,7 @@ const Home = () => {
                   Sign up as a job seeker or employer and complete your profile with relevant information.
                 </p>
               </div>
-              
+
               <div className="flex flex-col items-center">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full bg-primary-100 text-primary-600">
                   <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,7 +158,7 @@ const Home = () => {
                   Job seekers can search and apply for jobs, while employers can post new job openings.
                 </p>
               </div>
-              
+
               <div className="flex flex-col items-center">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full bg-primary-100 text-primary-600">
                   <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -130,7 +174,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       {/* CTA Section */}
       <div className="bg-primary-700">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">

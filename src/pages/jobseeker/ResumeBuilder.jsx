@@ -216,7 +216,7 @@ const ResumePDF = ({ data }) => {
         {/* Footer */}
         <View style={styles.footer}>
           <Text style={styles.footerBrand}>Powered by Signpost Celfon.in Technology</Text>
-          <Link src="https://signpostphonebook.in" style={styles.footerText}>www.signpostphonebook.in</Link>
+          <Link src="https://signpost4jobs.in" style={styles.footerText}>www.signpost4jobs.in</Link>
         </View>
       </Page>
     </Document>
@@ -266,7 +266,7 @@ const ResumeBuilder = () => {
                       type="text"
                       name="fullName"
                       className="form-input"
-                      placeholder="John Doe"
+                      placeholder="Enter your Fullname"
                     />
                     {errors.fullName && touched.fullName && (
                       <div className="text-red-500 text-sm mt-1">{errors.fullName}</div>
@@ -292,7 +292,7 @@ const ResumeBuilder = () => {
                       type="text"
                       name="phone"
                       className="form-input"
-                      placeholder="+1 234 567 8900"
+                      placeholder="+91 123456789"
                     />
                     {errors.phone && touched.phone && (
                       <div className="text-red-500 text-sm mt-1">{errors.phone}</div>
